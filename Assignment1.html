@@ -190,8 +190,16 @@ summary {
 <h2>1. Loading and preprocessing data</h2>
 <p>The script will run correctly if the file “activity.csv” has been downloaded and unzipped to the working directory. Library the dplyr and ggplot packages.</p>
 <pre class="r"><code>setwd(&quot;~/R5&quot;)
-library(dplyr)
-library(ggplot2)
+library(dplyr)</code></pre>
+<pre><code>## 
+## Attaching package: 'dplyr'</code></pre>
+<pre><code>## The following objects are masked from 'package:stats':
+## 
+##     filter, lag</code></pre>
+<pre><code>## The following objects are masked from 'package:base':
+## 
+##     intersect, setdiff, setequal, union</code></pre>
+<pre class="r"><code>library(ggplot2)
 activity &lt;- read.csv(&quot;activity.csv&quot;, stringsAsFactors = FALSE)
 activity$date &lt;- as.Date(activity$date)
 names(activity)</code></pre>

@@ -2,7 +2,11 @@
 title: "Reproducible Research Peer Assessment 1"
 author: "M Hamersma"
 date: "December 2019"
-output: html_document
+output:
+  word_document: default
+  pdf_document: default
+  html_document: default
+keep_md: yes
 ---
   
     
